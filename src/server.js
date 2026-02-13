@@ -3,5 +3,5 @@ const express = require("express");
 const app = require('./app');
 
 app.listen(process.env.PORT, () => {
-  console.log(`💌 Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`💌 Servidor corriendo`);
 });
