@@ -3,10 +3,12 @@ const cors = require('cors');
 const mailRoutes = require('./routes/mail.routes');
 
 const app = express();
-
 app.use(cors({
-  origin: "*"
+  origin: '*',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
 }));
+
 app.use(express.json());
 
 app.use('/api/mail', mailRoutes);
